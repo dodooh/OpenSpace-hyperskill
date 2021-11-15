@@ -1,0 +1,110 @@
+body {
+
+}
+
+.space {
+    background: url(images/space.png) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*PLANET AREA*/
+.planet-area {
+    height: 800px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.rocket {
+    position: absolute;
+    height: 150px;
+    width: auto;
+    left: 100px;
+    top: 600px;
+    transform: rotate(30deg);
+    transition: all 4s ease;
+    z-index: 2;
+}
+
+.planet {
+    height: 80%;
+    width: auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/*CONTROL PANEL*/
+.control-panel{
+    padding: 10px;
+    background-color: yellow;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0,0,0,1) 20px, rgba(0,0,0,1) 40px);
+    width: 450px;
+    position: absolute;
+    right: 220px;
+    top: 180px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 3;
+}
+
+.control-panel__inner {
+    padding: 30px 20px;
+    margin: 10px;
+    background-color: #000;
+}
+
+.login {
+    background-color: black;
+    border: 2px solid yellow;
+    color: white;
+    height: 24px;
+    width: 50%;
+}
+
+input[type="button"]{
+    border-radius: 5px;
+    box-shadow: 1px 1px;
+}
+
+.button-ok {
+    background-color: yellow;
+    color: black;
+}
+
+.launch {
+    background-color: red;
+    color: white;
+    border-radius: 40%;
+}
+
+.check-buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.check-buttons input {
+    height: 20px;
+    width: 20px;
+}
+.levers{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 0 20px 0;
+    height: 120px;
+    width: inherit;
+    padding: 17px;
+}
+
+.levers input {
+    transform: rotate(-90deg);
+    margin: 0 -60px 10px;
+    padding: 15px;
+}

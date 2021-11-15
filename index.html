@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" async></script>
+    <title>Open Space</title>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img src="images/rocket.png" alt="rocket image" class="rocket">
+            <img src="images/mars.png" alt="mars" class="planet">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input type="password" name="password" placeholder="Enter password to unlock" class="login">
+                <input type="button" name="button" value="Ok" class="button-ok">
+                <div class="check-buttons">
+                    <input type="checkbox" name="check-buttons" class="button-checkbox" disabled="true">
+                    <input type="checkbox" name="check-buttons" class="button-checkbox" disabled="true">
+                    <input type="checkbox" name="check-buttons" class="button-checkbox" disabled="true">
+                    <input type="checkbox" name="check-buttons" class="button-checkbox" disabled="true">
+                    <input type="checkbox" name="check-buttons" class="button-checkbox" disabled="true">
+                    <input type="checkbox" name="check-buttons" class="button-checkbox" disabled="true">
+                </div>
+                <div class="levers">
+                    <input type="range" name="levers" class="button-range" min="0" max="100" value="50" step="10" disabled="true">
+                    <input type="range" name="levers" class="button-range" min="0" max="100" value="50" step="10" disabled="true">
+                    <input type="range" name="levers" class="button-range" min="0" max="100" value="50" step="10" disabled="true">
+                    <input type="range" name="levers" class="button-range" min="0" max="100" value="50" step="10" disabled="true">
+                    <input type="range" name="levers" class="button-range" min="0" max="100" value="50" step="10" disabled="true">
+                </div>
+                <input type="button" name="button" value="Launch" class="launch" disabled="true" onclick="intoTheSpace()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
